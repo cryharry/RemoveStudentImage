@@ -51,7 +51,6 @@ public class DBQue {
 		con = dbConn();
 		pstmt = con.prepareStatement(sql);
 		pstmt.executeUpdate();
-		closeDB();
 	}
 	public int updatetDBResult(String sql) throws SQLException {
 		con = dbConn();
@@ -64,7 +63,6 @@ public class DBQue {
 		con = dbConn();
 		pstmt = con.prepareStatement(sql);
 		pstmt.executeUpdate();
-		closeDB();
 	}
 	
 	public void deleteDB(String sql) throws SQLException{
